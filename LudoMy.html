@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 800px;
+            width: 800px;
+            background-color: rgb(241, 240, 255);
+            position: relative;
+        }
+
+        .blue {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            background-color: blue;
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            /* margin: 10px; */
+        }
+
+        .blue_child {
+            height: 250px;
+            width: 250px;
+            background-color: white;
+            margin: 25px;
+        }
+
+        .a1 {
+            height: 64px;
+            width: 64px;
+            background-color: blue;
+            border-radius: 100%;
+            position: absolute;
+            right: 51px;
+            top: 46px;
+
+        }
+
+        .a2 {
+            height: 64px;
+            width: 64px;
+            background-color: blue;
+            border-radius: 100%;
+            position: absolute;
+            left: 51px;
+            top: 46px;
+
+        }
+
+        .a3 {
+            height: 64px;
+            width: 64px;
+            background-color: blue;
+            border-radius: 100%;
+            position: absolute;
+            right: 51px;
+            bottom: 46px;
+
+        }
+
+        .a4 {
+            height: 64px;
+            width: 64px;
+            background-color: blue;
+            border-radius: 100%;
+            position: absolute;
+            left: 51px;
+            bottom: 46px;
+
+
+        }
+
+
+        /* RED BOX HOME */
+
+        .redCD {
+            height: 302px;
+            width: 188px;
+            background-color: rgb(63, 165, 42);
+            position: absolute;
+            bottom: 5px;
+            right: 306px;
+        }
+
+        .R1 {
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            left: 0px;
+
+        }
+
+        .R2 {
+            height: 46px;
+            width: 61px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            left: 65px;
+            background-color: red;
+
+
+
+        }
+
+        .R3 {
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            left: 122px;
+
+
+
+        }
+
+        .R4 {
+            height: 50px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 47px;
+            left: 0px;
+        }
+
+        .R5 {
+            height: 50px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 47px;
+            left: 65px;
+            background-color: red;
+
+        }
+
+        .R6 {
+            height: 50px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            left: 122px;
+            top: 47px;
+        }
+
+        .R7 {
+            height: 50px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            left: 122px;
+            top: 94px;
+            left: 0px;
+        }
+
+        .R8 {
+            height: 50px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            left: 122px;
+            top: 94px;
+            left: 65px;
+            background-color: red;
+        }
+
+        .R9 {
+            height: 50px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            left: 122px;
+            top: 94px;
+
+        }
+
+        .R10 {
+            height: 50px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 141px;
+            left: 0px;
+        }
+
+        .R11 {
+            height: 50px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 141px;
+            left: 65px;
+            background-color: red;
+        }
+
+        .R12 {
+            height: 50px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 141px;
+            left: 122px;
+        }
+
+        .R13 {
+            height: 50px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 192px;
+            left: 0px;
+            background-color: red;
+        }
+
+        .R14 {
+            height: 50px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 192px;
+            left: 65px;
+            background-color: red;
+        }
+
+        .R15 {
+            height: 50px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 192px;
+            left: 122px;
+        }
+
+        .R16 {
+            height: 57px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 243px;
+            left: 0px;
+        }
+
+        .R17 {
+            height: 57px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 243px;
+            left: 65px;
+        }
+
+        .R18 {
+            height: 57px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 243px;
+            left: 122px;
+        }
+        
+        .red {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            background-color: red;
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+
+        }
+
+        .r1 {
+            height: 64px;
+            width: 64px;
+            background-color: rgb(255, 0, 25);
+            border-radius: 100%;
+            position: absolute;
+            right: 51px;
+            top: 46px;
+
+        }
+
+        .r2 {
+            height: 64px;
+            width: 64px;
+            background-color: rgb(255, 0, 25);
+            border-radius: 100%;
+            position: absolute;
+            left: 51px;
+            top: 46px;
+
+        }
+
+        .r3 {
+            height: 64px;
+            width: 64px;
+            background-color: rgb(255, 0, 25);
+            border-radius: 100%;
+            position: absolute;
+            right: 51px;
+            bottom: 46px;
+
+        }
+
+        .r4 {
+            height: 64px;
+            width: 64px;
+            background-color: rgb(255, 0, 25);
+            border-radius: 100%;
+            position: absolute;
+            left: 51px;
+            bottom: 46px;
+
+
+        }
+
+        .green {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            background-color: green;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+
+        }
+
+        .G1 {
+            height: 64px;
+            width: 64px;
+            background-color: green;
+            border-radius: 100%;
+            position: absolute;
+            right: 51px;
+            top: 46px;
+
+        }
+
+        .G2 {
+            height: 64px;
+            width: 64px;
+            background-color: green;
+            border-radius: 100%;
+            position: absolute;
+            left: 51px;
+            top: 46px;
+
+        }
+
+        .G3 {
+            height: 64px;
+            width: 64px;
+            background-color: green;
+            border-radius: 100%;
+            position: absolute;
+            right: 51px;
+            bottom: 46px;
+
+        }
+
+        .G4 {
+            height: 64px;
+            width: 64px;
+            background-color: green;
+            border-radius: 100%;
+            position: absolute;
+            left: 51px;
+            bottom: 46px;
+
+
+        }
+
+        .yellow {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            background-color: yellow;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+
+        }
+
+        .y1 {
+            height: 64px;
+            width: 64px;
+            background-color: yellow;
+            border-radius: 100%;
+            position: absolute;
+            right: 51px;
+            top: 46px;
+
+        }
+
+        .y2 {
+            height: 64px;
+            width: 64px;
+            background-color: yellow;
+            border-radius: 100%;
+            position: absolute;
+            left: 51px;
+            top: 46px;
+
+        }
+
+        .y3 {
+            height: 64px;
+            width: 64px;
+            background-color: yellow;
+            border-radius: 100%;
+            position: absolute;
+            right: 51px;
+            bottom: 46px;
+
+        }
+
+        .y4 {
+            height: 64px;
+            width: 64px;
+            background-color: yellow;
+            border-radius: 100%;
+            position: absolute;
+            left: 51px;
+            bottom: 46px;
+
+
+        }
+
+        .home {
+
+            height: 0px;
+            width: 0px;
+            border-style: solid;
+            border-width: 96px;
+            border-color: yellow blue red green;
+            position: absolute;
+            top: 38%;
+            left: 38%;
+        }
+
+
+        /* GREEN BOX HOME */
+
+        .green_cd {
+            height: 188px;
+            width: 302px;
+            background-color: rgb(63, 165, 42);
+            position: absolute;
+            bottom: 306px;
+            left: 5px;
+            
+        }
+        .g1{
+            height: 70px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+         
+
+        }
+         .g2{
+            height: 70px;
+            width:50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left:50px;
+            background-color: green;
+         }
+         .g3{
+            height: 70px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 100px;
+         }
+         .g4{
+            height: 70px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 150px;
+         
+
+        }
+        .g5{
+            height: 70px;
+            width:50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 200px;
+         
+
+        }
+        .g6{
+            height: 70px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 250px;
+         
+
+        }
+        .g7{
+            height: 70px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 70px;
+            left: 0px;
+
+        }
+        .g8{
+             height: 70px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 70px;
+            left: 50px;
+            background-color: green;
+         
+
+        }
+        .g9{
+            height: 70px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 70px;
+            left: 100px;
+            background-color: green;
+         
+
+        }
+        .g10{
+            height: 70px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 70px;
+            left: 150px;
+            background-color: green;
+         
+
+        }
+        .g11{
+            height: 70px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 70px;
+            left: 200px;
+            background-color: green;
+         
+         
+
+        }
+        .g12{
+            height: 70px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 70px;
+            left: 250px;
+            background-color: green;
+         
+         
+
+        }
+        .g13{
+            height: 45px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+         
+         
+
+        }
+        .g14{
+            height: 45px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 50px;
+         
+         
+
+        }
+        .g15{
+            height: 45px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 100px;
+         
+
+        }
+        .g16{
+            height: 45px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 150px;
+         
+
+        }
+        .g17{
+            height: 45px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 200px;
+         
+
+        }
+        .g18{
+            height: 45px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 250px;
+
+        } 
+
+        /* YELLOW BOX HOME */
+
+        .yellowCD{
+            height: 299px;
+            width: 188px;
+            background-color: rgb(63, 165, 42);
+            position: absolute;
+            top: 5px;
+            left: 306px;
+
+        }
+
+
+        .Y1{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+
+        }
+        .Y2{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 65px;
+
+
+        }
+        .Y3{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 122px;
+
+
+        }
+        .Y4{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 46px;
+            left: 0px;
+
+
+        }
+        .Y5{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 46px;
+            left: 65px;
+            background-color: yellow;
+
+
+        }
+        .Y6{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 46px;
+            left: 122px;
+            background-color: yellow;
+
+
+        }
+        .Y7{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 92px;
+            left: 0px;
+
+
+        }
+        .Y8{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 92px;
+            left: 65px;
+            background-color: yellow;
+
+
+        }
+        .Y9{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 92px;
+            left: 122px;
+
+
+        }
+        .Y10{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 139px;
+            left: 0px;
+
+
+        }
+        .Y11{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 139px;
+            left: 65px;
+            background-color: yellow;
+
+
+        }
+        .Y12{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 139px;
+            left: 122px;
+
+
+        }
+        .Y13{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 186px;
+            left: 0px;
+
+
+        }
+        .Y14{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 186px;
+            left: 65px;
+            background-color: yellow;
+
+
+        }
+        .Y15{
+            height: 46px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 186px;
+            left: 122px;
+
+
+        }
+        .Y16{
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+
+
+        }
+        .Y17{
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 65px;
+            background-color: yellow;
+
+
+        }
+        .Y18{
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 122px;
+
+
+        }
+
+
+
+        /* BLUE BOX HOME */
+
+
+        .blueCD{
+            height: 188px;
+            width: 302px;
+            background-color: rgb(63, 165, 42);
+            position: absolute;
+            bottom: 306px;
+            right: 5px;
+
+        }
+        .B1{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+        }
+        .B2{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 50px;
+
+        }
+        .B3{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 100px;
+
+        }
+        .B4{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 150px;
+
+        }
+        .B5{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 200px;
+            background-color: blue;
+
+        }
+        .B6{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            left: 250px;
+
+        }
+        .B7{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 63px;
+            left: 0px;
+            background-color: blue;
+
+        }
+        .B8{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 63px;
+            left: 50px;
+            background-color: blue;
+
+        }
+        .B9{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 63px;
+            left:100px;
+            background-color: blue;
+
+        }
+        .B10{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 63px;
+            left: 150px;
+            background-color: blue;
+
+        }
+        .B11{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 63px;
+            left: 200px;
+            background-color: blue;
+
+        }
+        .B12{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 63px;
+            left: 250px;
+
+        }
+        .B13{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+
+        }
+        .B14{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 50px;
+
+        }
+        .B15{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 100px;
+
+        }
+        .B16{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 150px;
+
+        }
+        .B17{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 200px;
+
+        }
+        .B18{
+            height: 63px;
+            width: 50px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 0px;
+            left: 250px;
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+   <center><div class="main">
+
+        <!-- blue part-->
+
+        <div class="blue">
+            <div class="blue_child">
+                <div class="a1"></div>
+                <div class="a2"></div>
+                <div class="a3"></div>
+                <div class="a4"></div>
+            </div>
+        </div>
+        <div class="redCD">
+            <div class="R1"></div>
+            <div class="R2"></div>
+            <div class="R3"></div>
+            <div class="R4"></div>
+            <div class="R5"></div>
+            <div class="R6"></div>
+            <div class="R7"></div>
+            <div class="R8"></div>
+            <div class="R9"></div>
+            <div class="R10"></div>
+            <div class="R11"></div>
+            <div class="R12"></div>
+            <div class="R13"></div>
+            <div class="R14"></div>
+            <div class="R15"></div>
+            <div class="R16"></div>
+            <div class="R17"></div>
+            <div class="R18"></div>
+
+        </div>
+
+
+        <div class="red">
+            <div class="red_child">
+                <div class="blue_child">
+                    <div class="r1"></div>
+                    <div class="r2"></div>
+                    <div class="r3"></div>
+                    <div class="r4"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="red">
+            <div class="blue_child">
+                <div class="r1"></div>
+                <div class="r2"></div>
+                <div class="r3"></div>
+                <div class="r4"></div>
+            </div>
+
+        </div>
+        <div class="green_cd">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="g6"></div>
+            <div class="g7"></div>
+            <div class="g8"></div>
+            <div class="g9"></div>
+            <div class="g10"></div>
+            <div class="g11"></div>
+            <div class="g12"></div>
+            <div class="g13"></div>
+            <div class="g14"></div>
+            <div class="g15"></div>
+            <div class="g16"></div>
+            <div class="g17"></div>
+            <div class="g18"></div>
+
+        </div>
+        <div class="green">
+            <div class="blue_child">
+                <div class="G1"></div>
+                <div class="G2"></div>
+                <div class="G3"></div>
+                <div class="G4"></div>
+            </div>
+            
+        </div>
+        <div class="yellowCD">
+            <div class="Y1"></div>
+            <div class="Y2"></div>
+            <div class="Y3"></div>
+            <div class="Y4"></div>
+            <div class="Y5"></div>
+            <div class="Y6"></div>
+            <div class="Y7"></div>
+            <div class="Y8"></div>
+            <div class="Y9"></div>
+            <div class="Y10"></div>
+            <div class="Y11"></div>
+            <div class="Y12"></div>
+            <div class="Y13"></div>
+            <div class="Y14"></div>
+            <div class="Y15"></div>
+            <div class="Y16"></div>
+            <div class="Y17"></div>
+            <div class="Y18"></div>
+        </div>
+        <div class="blueCD">
+            <div class="B1"></div>
+            <div class="B2"></div>
+            <div class="B3"></div>
+            <div class="B4"></div>
+            <div class="B5"></div>
+            <div class="B6"></div>
+            <div class="B7"></div>
+            <div class="B8"></div>
+            <div class="B9"></div>
+            <div class="B10"></div>
+            <div class="B11"></div>
+            <div class="B12"></div>
+            <div class="B13"></div>
+            <div class="B14"></div>
+            <div class="B15"></div>
+            <div class="B16"></div>
+            <div class="B17"></div>
+            <div class="B18"></div>
+        </div>
+        <div class="yellow">
+            <div class="blue_child">
+                <div class="y1"></div>
+                <div class="y2"></div>
+                <div class="y3"></div>
+                <div class="y4"></div>
+            </div>
+
+        </div>
+
+        <!-- HOME -->
+
+        <div class="home"></div>
+    </div></center>
+
+</body>
+
+</html>
