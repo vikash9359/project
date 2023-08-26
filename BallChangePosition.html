@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 600px;
+            width: 600px;
+            background: rgb(43, 226, 137);
+            position: relative;
+            border-radius: 8%;
+
+        }
+
+         .ball1 {
+            height: 80px;
+            width: 80px;
+            background-color: rgb(255, 0, 208);
+            border-radius: 100%;
+            animation-name: ball1;
+
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+
+
+        }
+
+        .ball2 {
+            height: 80px;
+            width: 80px;
+            background-color: blue;
+            border-radius: 100%;
+            position: absolute;
+            animation-name: ball2;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            top: 0px;
+            right: 0px;
+
+
+
+
+        } 
+
+        .ball3 {
+            height: 80px;
+            width: 80px;
+            background-color: rgb(255, 0, 17);
+            border-radius: 100%;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            animation-name: ball3;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+
+
+
+
+        }
+
+        .ball4 {
+            height: 80px;
+            width: 80px;
+            background-color: rgb(255, 123, 0);
+            border-radius: 100%;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            animation-name: ball4;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+          
+        } 
+        
+
+        @keyframes ball1 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 520px;
+            }
+
+            50% {
+                top: 520px;
+                left: 520px;
+            }
+
+            75% {
+                top: 520px;
+                left: 0px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+
+
+        }
+
+        @keyframes ball2 {
+            0% {
+                top: 0px;
+                left: 520px;
+            }
+
+            25% {
+                top: 520px;
+                left: 520px;
+            }
+
+            50% {
+                top: 520px;
+                left: 0px;
+            }
+
+            75% {
+                top: 0px;
+                left: 0px;
+            }
+
+            100% {
+                top: 0px;
+                left: 520px;
+            }
+
+
+
+
+        }
+
+        @keyframes ball3 {
+            0% {
+                top: 520px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 0px;
+            }
+            50%{
+                top: 0px;
+                left: 520px;
+            }
+
+            75% {
+                top: 520px;
+                left: 520px;
+            }
+
+            100% {
+                top: 520px;
+                left: 0px;
+
+
+
+
+            }
+        }
+
+
+            @keyframes ball4 {
+                0% {
+                    top: 520px;
+                    left: 520px;
+                }
+
+                25% {
+                    top: 520px;
+                    left: 0px;
+                }
+                50%{
+                    top: 0px;
+                    left: 0px;
+                }
+
+                75% {
+                    top: 0px;
+                    left: 520px;
+                }
+
+                100% {
+                    top: 520px;
+                    left: 520px;
+                }
+
+
+            }
+    </style>
+</head>
+
+<body>
+   <center> <div class="main">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+        <div class="ball4"></div>
+
+
+    </div></center>
+
+</body>
+
+</html>
